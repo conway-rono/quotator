@@ -1,0 +1,74 @@
+*,::after,::before{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(61, 59, 59);
+}
+body{
+    background-color: aliceblue;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(245, 222, 179, 0.145);
+    background-image: linear-gradient(135deg,wheat,rgb(153, 147, 128));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.container .title{
+    box-shadow: 2px 2px 4px 0px rgb(144, 141, 141);
+    padding: 1rem 2rem;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.container .card{
+    width: 90%;
+    max-width: 600px;
+    height: 50vh;
+    border-radius: 20px;
+    background-color: rgba(240, 248, 255, 0.109);
+    box-shadow: 2px 2px 5px 0px rgb(113, 110, 110);
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+.container .card p{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    padding: 2rem;
+    color: rgb(61, 59, 59);
+}
+.container .card p::before,.container .card p::after{
+    content: '"';
+}
+.container .card span{
+    color: maroon;
+    text-transform: uppercase;
+}
+.container button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    color: rgb(53, 52, 52);
+    box-shadow: 2px 2px 5px 0px rgb(93, 92, 92);
+    /* filter: blur(1px); */
+    transition: all 300ms ease;
+}
+.container button:hover{
+    background-color: chartreuse;
+    /* filter: blur(0px); */
+}
+.container button:focus{
+    background-color: chartreuse;
+}
